@@ -1,0 +1,62 @@
+body{
+    text-align: center;
+}
+
+#insta{
+    background-color: #E1306C;
+    display: inline-block;
+    /* height: 300px; */
+    color: white;
+    border: 2px solid #E1306C;
+}
+
+#insta > button{
+    background-color: white;
+    color: #E1306C;
+}
+
+#twitter{
+    margin-top: 70px;
+    display: inline-block;
+    border: 2px solid black;
+}
+
+.cards{
+    width: 200px;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#yt{
+    display: inline-block;
+    border: 2px solid black;
+}
+
+svg{
+    width: 70px;
+    height: 70px;
+}
+
+img{
+    width: 70px;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+#insta > h1{
+    color: white;
+}
+
+button{
+    width: 200px;
+    border-radius: 100px;
+    border: none;
+    background-color: black;
+    color: white;
+    height: 40px;
+    text-transform: uppercase;
+}
