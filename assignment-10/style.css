@@ -1,0 +1,1064 @@
+@font-face {
+    font-family: "Playfair";
+    src: url(assets/fonts/PlayfairDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(assets/fonts/Roboto-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #131230;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    border-radius: 3px;
+    margin: 0px auto;
+    padding: 20px 65px;
+    background-color: white;
+}
+
+header {
+    background-image: url(assets/imgs/logo/banner.png);
+    background-position: center top;
+    background-size: cover;
+    height: 150vh;
+    padding-top: 20px;
+    position: relative;
+}
+
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 280px;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero>span {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    padding: 5px;
+    display: block;
+}
+
+.hero h1 {
+    font-family: "Playfair", sans-serif;
+    font-style: italic;
+    font-size: 60px;
+    color: white;
+}
+
+.hero h1 span {
+    color: #ffb606;
+}
+
+.hero h1:nth-child(3) {
+    font-style: normal;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    font-size: 14px;
+}
+
+.nav-links a {
+    color: #131230;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.orange {
+    color: #ffb606;
+}
+
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.welcome-img img {
+    width: 580px;
+}
+
+.welcome .welcome-cont h2 {
+    font-family: "Playfair", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.welcome-cont {
+    margin-left: 30px;
+}
+
+.welcome .welcome-cont p {
+    padding-top: 20px;
+    color: #777;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.welcome-cont button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 0px;
+    background-color: #ffb606;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 1px solid #ffb606;
+    transition: all 0.5s;
+}
+
+.welcome-cont button:hover {
+    background-color: white;
+    border: 1px solid #ffb606;
+    cursor: pointer;
+}
+
+.welcome-cont button a {
+    color: #131230;
+    text-decoration: none;
+}
+
+.welcome-cont h2:nth-child(1) {
+    font-style: italic;
+}
+
+.food-item-section {
+    width: 100%;
+    background-image: url(assets/imgs/food\ items/banner.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0px;
+    gap: 80px;
+}
+
+.food-item-section-head {
+    width: 50%;
+    align-self: center;
+    position: relative;
+    left: 0;
+    text-align: center;
+}
+
+.food-item-section-head p {
+    font-size: 14px;
+    color: #777;
+    padding-top: 30px;
+    line-height: 1.7;
+}
+
+.food-item-section-head h2 {
+    font-family: "Playfair", sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.food-item-section-head h2:nth-child(2) {
+    font-style: normal;
+}
+
+.food-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.food-item .food-item-img {
+    width: 100%;
+    overflow: hidden !important;
+}
+
+.food-item .food-item-img img {
+    width: 100%;
+    transition: 0.7s;
+}
+
+.food-item {
+    width: 350px;
+    background-color: #F9F9FF;
+    padding-bottom: 30px;
+    transition: 0.7s;
+}
+
+.food-item-name {
+    margin: 30px;
+    text-transform: capitalize;
+    display: flex;
+    transition: 0.7s;
+    font-size: 17px;
+    justify-content: space-between;
+}
+
+.food-item-name h3:nth-child(1) {
+    font-family: "Playfair", sans-serif;
+}
+
+.food-item-cont {
+    margin: 30px;
+    color: #777;
+    transition: 0.7s;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.food-item:hover {
+    background-color: #ffb606;
+    color: #131230;
+}
+
+.food-item:hover .food-item-name h3:nth-child(2) {
+    color: #131230;
+}
+
+.food-item:hover .food-item-cont {
+    color: #131230;
+}
+
+.food-item:hover .food-item-img img {
+    transform: scale(1.1, 1.1);
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(assets/imgs/banner/banner.png);
+    background-size: cover;
+    padding: 100px;
+    background-position: center;
+}
+
+.banner-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-cont button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 0px;
+    background-color: #ffb606;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 1px solid #ffb606;
+    transition: all 0.5s;
+}
+
+.banner-cont button:hover {
+    background-color: transparent;
+    border: 1px solid #ffb606;
+    cursor: pointer;
+}
+
+.banner-cont button:hover a {
+    color: #ffb606;
+}
+
+.banner-cont a {
+    transition: all 0.5s;
+    color: #131230;
+    text-decoration: none;
+}
+
+.banner-cont h1 {
+    font-size: 42px;
+    font-family: "Playfair", sans-serif;
+    color: white;
+}
+
+.banner-cont h2 {
+    font-size: 24px;
+    font-style: italic;
+    text-transform: capitalize;
+    color: white;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.dishes-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+    flex-direction: column;
+}
+
+.dishes-section-head {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.dishes-section-head h2 {
+    font-family: "Playfair", sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.dishes-section-head p {
+    color: #777;
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.dishes {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+}
+
+.dish {
+    display: flex;
+    justify-content: center;
+}
+
+.dish-number {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.dish-cont {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.dish-number h2 {
+    font-size: 60px;
+    font-family: "Playfair", sans-serif;
+}
+
+.dish-number hr {
+    width: 25%;
+}
+
+.dish-des {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 0;
+    width: 50%;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.dish-des h2 {
+    font-family: "Playfair", sans-serif;
+    font-size: 36px;
+}
+
+.dish-des p {
+    font-size: 14px;
+    color: #777;
+    margin: 20px 0px;
+    line-height: 1.5;
+}
+
+.dish-des span {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.dish-img img {
+    width: 445px;
+}
+
+.dish-des button {
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.dish-des i {
+    margin-left: 5px;
+    transition: all 0.5s;
+}
+
+.dish-des a {
+    color: #131230;
+    text-decoration: none;
+}
+
+.dish-des button:hover i {
+    color: #ffb606;
+    transform: translateX(4px);
+}
+
+.custom-banner {
+    height: 480px;
+    background-image: url(assets/imgs/customer/banner.png);
+    background-size: cover;
+}
+
+.custom-cont {
+    color: white;
+    text-align: center;
+}
+
+.custom-cont h2 {
+    font-family: "Playfair", sans-serif;
+    font-size: 36px;
+}
+
+.op {
+    background-color: rgba(1, 7, 16, 0.8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.op .custom-cont p {
+    padding-top: 10px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.update-section {
+    padding: 100px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.updates {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 50px;
+}
+
+.update {
+    width: 350px;
+    background-color: #f9f9ff;
+}
+
+.update-section-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+.update-section-head h2 {
+    font-size: 36px;
+    font-family: "Playfair", sans-serif;
+}
+
+.update-section-head p {
+    font-size: 14px;
+    font-style: italic;
+    color: #777;
+    margin-top: 10px;
+}
+
+.update-img img {
+    width: 100%;
+}
+
+.update-cont {
+    background-color: #f9f9ff;
+    padding: 40px 30px;
+    transition: .5s;
+    position: relative;
+    bottom: 5px;
+}
+
+.update-cont:hover {
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.update-details {
+    display: flex;
+    justify-content: space-between;
+    color: #777;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.update-details i {
+    margin-right: 5px;
+}
+
+.update-des button:hover i {
+    color: #ffb606;
+    transform: translateX(4px);
+}
+
+.update-des i {
+    margin-left: 5px;
+    transition: all 0.5s;
+}
+
+.update-des button {
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.update-des h3 {
+    font-size: 20px;
+    font-family: "Playfair", sans-serif;
+    text-transform: capitalize;
+    margin: 20px 0px;
+}
+
+.update-des p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.update-des a {
+    color: #131230;
+    text-decoration: none;
+}
+
+.order-section {
+    height: 540px;
+    background-image: url(assets/imgs/order/banner.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-op {
+    background-color: rgba(1, 7, 16, 0.7);
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.order-section-head {
+    text-align: center;
+    color: white;
+}
+
+.order-section-head h2 {
+    font-family: "Playfair", sans-serif;
+    font-size: 36px;
+}
+
+.order-section-head p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.order-options {
+    margin-top: 90px;
+    display: flex;
+    gap: 20px;
+}
+
+.option input {
+    background-color: white;
+    height: 45px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.option button {
+    text-align: center;
+    position: relative;
+    left: 4px;
+    height: 45px;
+    background-color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.option button i {
+    color: black;
+    width: 13px;
+    font-size: 16px;
+}
+
+.order-btn button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 0px;
+    background-color: #ffb606;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 1px solid #ffb606;
+    transition: all 0.5s;
+}
+
+.order-btn button:hover {
+    background-color: transparent;
+    border: 1px solid #ffb606;
+    cursor: pointer;
+}
+
+.order-btn button:hover a {
+    color: #ffb606;
+}
+
+.order-btn a {
+    transition: all 0.5s;
+    color: #131230;
+    text-decoration: none;
+}
+
+#sep {
+    background-color: #4C5157;
+    border: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #131230;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-section {
+    color: #777;
+    font-size: 14px;
+    background-color: #131230;
+    padding: 100px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    width: 80%;
+}
+
+.about {
+    line-height: 21px;
+    flex: 1 1 320px;
+    max-width: 580px;
+}
+
+.about p {
+    margin-top: 20px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1 1 320px;
+    max-width: 600px;
+}
+
+.contact h3 {
+    font-family: "Playfair", sans-serif;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.contact-cont {
+    display: flex;
+    gap: 20px;
+}
+
+.cont-i i:first-child {
+    margin-bottom: 10px;
+}
+
+.cont-i {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.cont-des {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hours {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-direction: column;
+    flex: 1 1 280px;
+    max-width: 600px;
+}
+
+.hours h3 {
+    font-family: "Playfair", sans-serif;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.footer-bar {
+    color: white;
+    display: flex;
+    font-size: 14px;
+    padding: 30px 0px;
+    background-color: #0D0D27;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.credit a{
+    color: #007bff;
+    text-decoration: none;
+}
+
+.credit a:hover{
+    color: #0056b3;
+}
+
+.footer-bar .social {
+    display: flex;
+    gap: 30px;
+}
+
+.social i {
+    transition: .3s;
+}
+
+.social i:hover {
+    color: #ffb606;
+}
+
+.social a{
+    color: white;
+}
+
+@media (max-width: 1200px) {
+    nav {
+        width: 90%;
+        padding: 16px 40px;
+    }
+
+    header {
+        height: 120vh;
+    }
+
+    .dish-img img {
+        width: 380px;
+    }
+
+    .food-item {
+        width: 320px;
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        height: auto;
+        min-height: 100vh;
+        padding-bottom: 80px;
+    }
+
+    .hero {
+        padding-top: 220px;
+        top: 36%;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .welcome {
+        width: 90%;
+        padding-top: 90px;
+    }
+
+    .welcome-img img {
+        width: 100%;
+    }
+
+    .food-item-section-head {
+        width: 60%;
+        left: 40px;
+    }
+
+    .food-items {
+        gap: 24px;
+    }
+
+    .dish {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .dish-cont {
+        width: 100%;
+    }
+
+    .dish-des {
+        left: 0;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .dish-img img {
+        width: 100%;
+    }
+
+    .updates {
+        flex-wrap: wrap;
+    }
+
+    .update {
+        width: 45%;
+        min-width: 300px;
+    }
+
+    .order-options {
+        margin-top: 60px;
+    }
+
+    .footer-section {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px 20px;
+        width: 94%;
+    }
+
+    .nav-links ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .hero {
+        padding-top: 160px;
+        top: 34%;
+    }
+
+    .hero>span {
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .welcome {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .welcome-cont {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .food-item-section-head {
+        width: 80%;
+        left: 0;
+        text-align: center;
+        align-self: center;
+    }
+
+    .food-items {
+        gap: 20px;
+    }
+
+    .food-item {
+        width: 90%;
+        max-width: 520px;
+    }
+
+    .banner {
+        padding: 80px 20px;
+    }
+
+    .banner-cont h1 {
+        font-size: 32px;
+    }
+
+    .banner-cont h2 {
+        font-size: 20px;
+    }
+
+    .dish-number h2 {
+        font-size: 44px;
+    }
+
+    .order-options {
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .option {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .option input {
+        width: 100%;
+    }
+
+    .footer-section {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 40px;
+        width: 90%;
+    }
+
+    .about,
+    .contact,
+    .hours {
+        width: 100%;
+    }
+
+    .contact-cont {
+        justify-content: center;
+    }
+
+    .footer-bar {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    nav {
+        padding: 12px 16px;
+        width: 96%;
+    }
+
+    .nav-links ul {
+        gap: 12px;
+        font-size: 12px;
+    }
+
+    .hero {
+        padding-top: 140px;
+        top: 32%;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .food-item-section {
+        padding: 80px 0px;
+        gap: 48px;
+        background-position: right top;
+        background-size: 60%;
+    }
+
+    .dish-number hr {
+        width: 15%;
+    }
+
+    .updates {
+        width: 90%;
+        gap: 24px;
+    }
+
+    .update {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .update-cont {
+        padding: 28px 22px;
+    }
+
+    .order-section {
+        height: auto;
+        padding: 60px 0;
+    }
+
+    .order-btn button {
+        padding: 14px 24px;
+    }
+
+    .footer-bar {
+        font-size: 12px;
+        padding: 20px 0px;
+    }
+
+    .social {
+        gap: 16px;
+    }
+}
